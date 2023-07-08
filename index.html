@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>developer-portfolio</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
 .primary-btn{
     padding:10px 30px;
     outline: none;
@@ -18,7 +22,12 @@
 }
 
 
-
+header{
+    background-color: antiquewhite;
+    background-image: url("images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
         nav{
             display: flex;
             justify-content: space-between;
@@ -44,6 +53,32 @@
         span{
             color: tomato;
         }
+        .banner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 100px 100px;
+            
+        }
+        .banner-content{
+           width: 400px;
+        }
+        .banner > img{
+            width: 40%;
+        }
+        .banner-content > h4{
+            font-size: 40px;
+            color: rgb(79, 79, 79);
+        }
+        .banner-content > h1{
+            font-size: 60px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+        }
+        .banner-content > p{
+            color: rgb(57, 57, 57);
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +94,17 @@
                 </ul>
             </div>
          </nav>
+         <div class="banner">
+            <div class="banner-content">
+                <h4>Hi, I am</h4>
+                <h1>Mary Hardy</h1>
+                <p>Shot what able cold new see hold.Friendly as an betrayed formerly 
+                    he. Morning because as to society behaved moments</p>
+                    <button class="primary-btn">Download cv</button>
+                    <button class="primary-btn">Contact</button>
+            </div>
+            <img src="images/hardy.png" alt="">
+         </div>
     </header>
 
 <!-- main section desing  -->
