@@ -24,9 +24,10 @@
 
 header{
     background-color: antiquewhite;
-    background-image: url("images/header_bg.png");
+    background-image: url("images/header_bg.png") ,url("images/developer.png");
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right bottom, left top;
+    
 }
         nav{
             display: flex;
@@ -79,6 +80,58 @@ header{
             color: rgb(57, 57, 57);
             margin-bottom: 20px;
         }
+
+
+
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.about-me-section{
+    background-color: antiquewhite;
+    padding: 100px;
+    text-align: center;
+    /* height: 500px; */
+    /* margin: 50px; */
+}
+
+.about-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.about-me-section > h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-address{
+    font-weight: 700;
+
+}
+
+.what-do-section{
+    padding: 120px;
+    text-align: center;
+}
+.what-do-section >h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.card{
+    box-shadow: 10px 10px 40px rgba(246, 178, 178, 0.872);
+    padding: 20px;
+    /* border: 1px solid red; */
+    
+}
     </style>
 </head>
 <body>
@@ -109,7 +162,60 @@ header{
 
 <!-- main section desing  -->
     <main>
+        <section class="about-me-section">
+            <h1>About Me</h1>
+            <p>I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and 
+                slick websites that provide real value to the end user. Thousands of clients have procured 
+                exceptional resulfs while working with me. Delivering work within time and budget which meets 
+                clients requirements in our mata.</p>
+                <div class="about-items">
+                    <div class="about-item">
+                        <div class="about-title">form:</div>
+                        <div class="about-address">Los angels usa</div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-title">form:</div>
+                        <div class="about-address">Los angels usa</div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-title">form:</div>
+                        <div class="about-address">Los angels usa</div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-title">form:</div>
+                        <div class="about-address">Los angels usa</div>
+                    </div>
 
+                </div>
+        </section>
+        <section class="what-do-section">
+            <h1>What I do</h1>
+            <p>I have more than 10 years experience building software for clients all over the world. Below is a quick 
+                overview of my main technical skill sets and technologies i use. Want to find out more about my experience? 
+                Check out my online resume and project portfolio.</p>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <img src="images/icons/js.png" alt="">
+                <h3>javascript</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia molestiae delectus maiores autem recusandae iste, debitis quis blanditiis. Quia dolore ?</p>
+            </div>
+            <div class="card">
+                <img src="images/icons/nodejs.png" alt="">
+                <h3>nodejs</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia molestiae delectus maiores autem recusandae iste, debitis quis blanditiis. Quia dolore ?</p>
+            </div>
+            <div class="card">
+                <img src="images/icons/nodejs.png" alt="">
+                <h3>mogodb</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia molestiae delectus maiores autem recusandae iste, debitis quis blanditiis. Quia dolore ?</p>
+            </div>
+            <div class="card">
+                <img src="images/icons/react.png" alt="">
+                <h3>react</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia molestiae delectus maiores autem recusandae iste, debitis quis blanditiis. Quia dolore ?</p>
+            </div>
+        </section>
     </main>
 
 <!-- footer section design  -->
